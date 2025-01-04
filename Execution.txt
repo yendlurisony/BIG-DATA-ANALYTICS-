@@ -1,0 +1,11 @@
+On Cloudera:
+==============
+click on project -> click on export -> select export destination as Jar file -> Name the jar file(Ex:Word count.jar) -> Finish
+
+
+On Hadoop Command Prompt:
+========================
+hadoop fs - put WCFile.txt WCFile
+hadoop jar WordCount.jar WCDriver wCFile.txt
+WCOutput
+hadoop fs - cat WCOutput/part-00000
